@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 125px 0 125px;
   background-color: #ffffff;
@@ -21,7 +21,7 @@ a {
 }
 
 h1 {
-  width: 956px;
+  max-width: 956px;
   font-size: 60px;
   line-height: 60px;
   letter-spacing: -0.03em;
@@ -63,7 +63,7 @@ h3 {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  width: 430px;
+  max-width: 430px;
   font-size: 20px;
   line-height: 27px;
   letter-spacing: -0.03em;
@@ -71,7 +71,7 @@ h3 {
 }
 
 .about p {
-  width: 1048px;
+  max-width: 1048px;
   margin-top: 30px;
   font-size: 45px;
   line-height: 61px;
@@ -113,6 +113,10 @@ h3 {
   margin-bottom: 90px;
 }
 
+picture img {
+  width: 100%;
+}
+
 .projects__card a {
   display: block;
   margin-top: 15px;
@@ -143,7 +147,7 @@ h3 {
 @media (max-width: 1199px) {
   .container {
     box-sizing: border-box;
-    width: 960px;
+    width: 100%;
     padding: 0 15px 0 15px;
   }
 
@@ -152,7 +156,7 @@ h3 {
   }
 
   h1 {
-    width: 802px;
+    max-width: 802px;
     font-size: 50px;
   }
 
@@ -175,7 +179,7 @@ h3 {
   }
 
   .about p {
-    width: 690px;
+    max-width: 690px;
     font-size: 35px;
     line-height: 48px;
   }
@@ -208,7 +212,7 @@ h3 {
 @media (max-width: 767px) {
   .container {
     box-sizing: border-box;
-    width: 375px;
+    width: 100%;
     padding: 0 13px 0 13px;
   }
 
@@ -217,7 +221,7 @@ h3 {
   }
 
   h1 {
-    width: 348px;
+    max-width: 348px;
     font-size: 30px;
     line-height: 32px;
   }
@@ -243,13 +247,13 @@ h3 {
   .description__data p {
     bottom: 15px;
     left: 15px;
-    width: 312px;
+    max-width: 312px;
     font-size: 16px;
     line-height: 22px;
   }
 
   .about p {
-    width: 346px;
+    max-width: 346px;
     margin-top: 20px;
     font-size: 22px;
     line-height: 30px;
