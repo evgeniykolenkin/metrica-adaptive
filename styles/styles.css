@@ -355,8 +355,10 @@ picture img {
   }
 
   .about__btn {
+    width: 100%;
     padding: 14.5px 27px;
     font-size: 16px;
+    text-align: center;
     line-height: 22px;
   }
 
