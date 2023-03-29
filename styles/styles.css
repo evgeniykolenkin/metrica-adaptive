@@ -12,7 +12,7 @@ body {
 .container {
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0 125px 0 125px;
+  padding: 0 125px;
   background-color: #ffffff;
 }
 
@@ -38,14 +38,14 @@ h2 {
 }
 
 h3 {
-  margin-top: 15px;
+  margin-top: 12px;
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
   color: #121212;
 }
 
-.main__inner {
+.description {
   padding-top: 70px;
 }
 
@@ -183,7 +183,7 @@ picture img {
 
 .services__card h3 {
   max-width: 343px;
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
 .services__card p {
@@ -204,15 +204,62 @@ picture img {
   line-height: 41px;
 }
 
+.comments {
+  padding-bottom: 157px;
+}
+
+.comments h2 {
+  margin-bottom: 30px;
+}
+
+.comments__data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 79px 50px;
+}
+
+.comments__item {
+  width: 46%;
+}
+
+.comments__item-small {
+  width: 505px;
+}
+
+.comments__item:nth-last-child(1):nth-child(odd) {
+  width: 861px;
+}
+
+.comments__item h3 {
+  margin-top: 0;
+  font-size: 45px;
+  line-height: 61px;
+  color: #000000;
+}
+
+.comments__item p {
+  margin-top: 14px;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+@media (max-width: 1262px) {
+  .container {
+    padding: 0 50px;
+  }
+  .comments__item h3 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     box-sizing: border-box;
     width: 100%;
-    padding: 0 15px 0 15px;
-  }
-
-  .main__inner {
-    padding-top: 74px;
+    padding: 0 15px;
   }
 
   h1 {
@@ -227,6 +274,10 @@ picture img {
   h3 {
     font-size: 25px;
     line-height: 34px;
+  }
+
+  .description {
+    padding-top: 74px;
   }
 
   .description__data {
@@ -272,8 +323,12 @@ picture img {
     padding-bottom: 120px;
   }
 
+  .services h2 {
+    padding-top: 150px;
+  }
+
   .services__inner {
-    row-gap: 80px;
+    row-gap: 83px;
   }
 
   .services__card {
@@ -282,8 +337,8 @@ picture img {
   }
 
   .services__price {
-    top: 31px;
-    left: 32px;
+    top: 30px;
+    left: 33px;
   }
 
   .services__card h3 {
@@ -300,7 +355,38 @@ picture img {
   }
 
   .services__btn {
-    margin-top: 80px;
+    margin-top: 86px;
+  }
+
+  .comments {
+    padding-bottom: 120px;
+  }
+
+  .comments h2 {
+    padding-top: 117px;
+  }
+
+  .comments__data {
+    gap: 80px 10px;
+  }
+
+  .comments__item {
+    width: 49.4%;
+  }
+
+  .comments__item:nth-last-child(1):nth-child(odd) {
+    width: 694px;
+  }
+
+  .comments__item h3 {
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .comments__item p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 
@@ -308,15 +394,11 @@ picture img {
   .container {
     box-sizing: border-box;
     width: 100%;
-    padding: 0 13px 0 13px;
-  }
-
-  .main__inner {
-    padding-top: 61px;
+    padding: 0 13px;
   }
 
   h1 {
-    max-width: 348px;
+    max-width: 337px;
     font-size: 30px;
     line-height: 32px;
   }
@@ -328,9 +410,13 @@ picture img {
   }
 
   h3 {
-    margin-top: 20px;
+    margin-top: 17px;
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .description {
+    padding-top: 61px;
   }
 
   .description__data {
@@ -348,7 +434,7 @@ picture img {
   }
 
   .about p {
-    max-width: 346px;
+    max-width: 345px;
     margin-top: 20px;
     font-size: 22px;
     line-height: 30px;
@@ -363,7 +449,7 @@ picture img {
   }
 
   .projects {
-    padding-bottom: 103px;
+    padding-bottom: 144px;
   }
 
   .projects h2 {
@@ -395,13 +481,13 @@ picture img {
   }
 
   .services h2 {
-    padding-top: 80px;
+    padding-top: 77px;
     margin-bottom: 20px;
   }
 
   .services__inner {
     flex-direction: column;
-    row-gap: 60px;
+    row-gap: 66px;
   }
 
   .services__card {
@@ -427,9 +513,43 @@ picture img {
   }
 
   .services__btn {
-    margin-top: 60px;
-    padding: 37px 0;
+    margin-top: 65px;
+    padding: 34px 0;
     font-size: 22px;
     line-height: 30px;
+  }
+
+  .comments {
+    padding-bottom: 80px;
+  }
+
+  .comments h2 {
+    padding-top: 80px;
+    margin-bottom: 22px;
+  }
+
+  .comments__data {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+  }
+
+  .comments__item {
+    width: 100%;
+  }
+
+  .comments__item:nth-last-child(1):nth-child(odd) {
+    width: 100%;
+  }
+
+  .comments__item h3 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .comments__item p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
