@@ -247,7 +247,7 @@ picture img {
 
 @media (max-width: 1262px) {
   .container {
-    padding: 0 50px;
+    padding: 0 50px 150px 50px;
   }
   .comments__item h3 {
     font-size: 42px;
