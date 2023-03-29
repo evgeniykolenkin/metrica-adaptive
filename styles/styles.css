@@ -245,10 +245,17 @@ picture img {
   color: #000000;
 }
 
-@media (max-width: 1262px) {
+@media (max-width: 1277px) {
   .container {
-    padding: 0 50px 150px 50px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px 150px 15px;
   }
+
+  .comments__data {
+    gap: 79px 42px;
+  }
+
   .comments__item h3 {
     font-size: 42px;
     line-height: 55px;
@@ -257,8 +264,6 @@ picture img {
 
 @media (max-width: 1199px) {
   .container {
-    box-sizing: border-box;
-    width: 100%;
     padding: 0 15px;
   }
 
@@ -390,10 +395,18 @@ picture img {
   }
 }
 
+@media (max-width: 860px) {
+  .comments__item {
+    width: 100%;
+  }
+
+  .comments__item:nth-last-child(1):nth-child(odd) {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
-    box-sizing: border-box;
-    width: 100%;
     padding: 0 13px;
   }
 
