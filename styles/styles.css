@@ -11,7 +11,6 @@ body {
 .container {
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0 125px;
   background-color: #ffffff;
 }
 
@@ -28,6 +27,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 30px;
   padding-top: 150px;
   font-size: 18px;
   line-height: 25px;
@@ -104,10 +104,6 @@ h3 {
   padding-bottom: 150px;
 }
 
-.projects h2 {
-  margin-bottom: 30px;
-}
-
 .projects__card {
   margin-bottom: 90px;
 }
@@ -142,14 +138,17 @@ picture img {
   transition: 0.3s;
 }
 
-.services .container {
+.services {
   background-color: #121212;
   padding-bottom: 150px;
 }
 
+.services .container {
+  background-color: #121212;
+}
+
 .services h2 {
   color: #ffffff;
-  margin-bottom: 30px;
 }
 
 .services__inner {
@@ -207,10 +206,6 @@ picture img {
   padding-bottom: 157px;
 }
 
-.comments h2 {
-  margin-bottom: 30px;
-}
-
 .comments__data {
   display: flex;
   flex-wrap: wrap;
@@ -244,11 +239,87 @@ picture img {
   color: #000000;
 }
 
+.gallery__section {
+  background-color: #ad1818;
+  position: relative;
+}
+
+.gallery__title .container,
+.gallery__controls .container,
+.gallery__slide-title .container {
+  background-color: transparent;
+}
+
+.gallery__title {
+  position: absolute;
+  top: 60px;
+  left: 125px;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 100;
+}
+
+.gallery__controls {
+  position: absolute;
+  left: 125px;
+  bottom: 165px;
+}
+
+.gallery__controls .container {
+  display: flex;
+  gap: 24px;
+}
+
+.gallery__btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}
+
+.gallery {
+  position: relative;
+  height: 717px;
+}
+
+.gallery__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__slide-active {
+  opacity: 1;
+}
+
+.gallery__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.gallery__slide-title {
+  position: absolute;
+  left: 125px;
+  bottom: 60px;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
 @media (max-width: 1277px) {
   .container {
     box-sizing: border-box;
     width: 100%;
-    padding: 0 15px 150px 15px;
   }
 
   .comments__data {
@@ -392,6 +463,12 @@ picture img {
     font-size: 20px;
     line-height: 27px;
   }
+
+  .gallery__title,
+  .gallery__controls,
+  .gallery__slide-title {
+    left: 50px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -416,6 +493,7 @@ picture img {
   }
 
   h2 {
+    margin-bottom: 20px;
     padding-top: 80px;
     font-size: 14px;
     line-height: 19px;
@@ -464,10 +542,6 @@ picture img {
     padding-bottom: 144px;
   }
 
-  .projects h2 {
-    margin-bottom: 20px;
-  }
-
   .projects__card {
     margin-bottom: 49px;
   }
@@ -494,7 +568,6 @@ picture img {
 
   .services h2 {
     padding-top: 77px;
-    margin-bottom: 20px;
   }
 
   .services__inner {
