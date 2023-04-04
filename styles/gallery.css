@@ -1,0 +1,170 @@
+.gallery__section {
+  position: relative;
+  margin-top: 157px;
+}
+
+.gallery__title .container,
+.gallery__controls .container,
+.gallery__slide-title .container {
+  background-color: transparent;
+}
+
+.gallery__title {
+  position: absolute;
+  top: 60px;
+  left: 125px;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 100;
+}
+
+.gallery__controls {
+  position: absolute;
+  left: 119px;
+  bottom: 165px;
+}
+
+.gallery__controls .container {
+  display: flex;
+  gap: 23px;
+}
+
+.gallery__btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 35px;
+  opacity: 0.5;
+}
+
+.gallery__btn:hover {
+  opacity: 1;
+}
+
+.gallery__btn img {
+  width: 100%;
+}
+
+.gallery {
+  position: relative;
+  height: 717px;
+}
+
+.gallery__inner.container {
+  padding: 0;
+}
+
+.gallery__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__slide-active {
+  opacity: 1;
+}
+
+.gallery__slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__slide-title {
+  position: absolute;
+  left: 125px;
+  bottom: 60px;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .gallery__section {
+    margin-top: 0;
+  }
+
+  .gallery__title,
+  .gallery__controls,
+  .gallery__slide-title {
+    left: 50px;
+  }
+
+  .gallery__title .container,
+  .gallery__controls .container,
+  .gallery__slide-title .container {
+    background-color: transparent;
+  }
+
+  .gallery__title {
+    top: 80px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .gallery__controls {
+    bottom: 155px;
+  }
+
+  .gallery__btn {
+    width: 30px;
+    height: 37px;
+  }
+
+  .gallery {
+    height: 536px;
+  }
+
+  .gallery__slide-title {
+    bottom: 80px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery__title,
+  .gallery__slide-title {
+    left: 12px;
+  }
+
+  .gallery__title {
+    top: 61px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .gallery__controls {
+    width: 100%;
+    left: 0;
+    bottom: 189px;
+  }
+
+  .gallery__controls .container {
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  .gallery__btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .gallery {
+    height: 408px;
+  }
+
+  .gallery__slide-title {
+    bottom: 60px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+}

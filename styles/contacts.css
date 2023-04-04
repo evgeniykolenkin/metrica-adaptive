@@ -1,0 +1,11 @@
+@media (max-width: 1199px) {
+  .contacts.container {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts.container {
+    padding-top: 80px;
+  }
+}

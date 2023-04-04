@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <!-- <header></header> -->
@@ -45,50 +45,52 @@
       <!-- ПРОЕКТЫ С КНОПКОЙ "ПОСМОТРЕТЬ ПРОЕКТЫ" -->
       <section class="projects container">
         <h2>проекты</h2>
-        <div class="projects__card">
-          <picture>
-            <source
-              media="(max-width: 767px)"
-              srcset="resources/project-phone-1.png"
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="resources/project-tablet-1.png"
-            />
-            <img src="resources/project-1.png" alt="фото проекта квартиры" />
-          </picture>
-          <h3>ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
-          <a href="#">Подробнее →</a>
-        </div>
-        <div class="projects__card">
-          <picture>
-            <source
-              media="(max-width: 767px)"
-              srcset="resources/project-phone-2.png"
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="resources/project-tablet-2.png"
-            />
-            <img src="resources/project-2.png" alt="фото проекта квартиры" />
-          </picture>
-          <h3>ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
-          <a href="#">Подробнее →</a>
-        </div>
-        <div class="projects__card">
-          <picture>
-            <source
-              media="(max-width: 767px)"
-              srcset="resources/project-phone-3.png"
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="resources/project-tablet-3.png"
-            />
-            <img src="resources/project-3.png" alt="фото проекта квартиры" />
-          </picture>
-          <h3>ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
-          <a href="#">Подробнее →</a>
+        <div class="projects__list">
+          <div class="projects__card">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="resources/project-phone-1.png"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="resources/project-tablet-1.png"
+              />
+              <img src="resources/project-1.png" alt="фото проекта квартиры" />
+            </picture>
+            <h3>ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
+            <a href="#">Подробнее →</a>
+          </div>
+          <div class="projects__card">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="resources/project-phone-2.png"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="resources/project-tablet-2.png"
+              />
+              <img src="resources/project-2.png" alt="фото проекта квартиры" />
+            </picture>
+            <h3>ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
+            <a href="#">Подробнее →</a>
+          </div>
+          <div class="projects__card">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="resources/project-phone-3.png"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="resources/project-tablet-3.png"
+              />
+              <img src="resources/project-3.png" alt="фото проекта квартиры" />
+            </picture>
+            <h3>ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
+            <a href="#">Подробнее →</a>
+          </div>
         </div>
         <a href="#" class="btn projects__btn">Смотреть все проекты</a>
       </section>
@@ -184,7 +186,7 @@
       <!-- ГАЛЕРЕЯ -->
       <section class="gallery__section">
         <div class="gallery__title">
-          <div class="container">
+          <div class="gallery__inner container">
             <p>галерея проектов</p>
           </div>
         </div>
@@ -198,9 +200,9 @@
               <img src="resources/gallery-1.png" alt="кровать" />
             </picture>
             <div class="gallery__slide-title">
-              <div class="container">
+              <div class="gallery__inner container">
                 <p>
-                  Проект Двухкомнтаной <br />
+                  Проект Двухкомнатной <br />
                   квартиры в ЖК Лесной Пейзаж
                 </p>
               </div>
@@ -209,7 +211,7 @@
           <div class="gallery__slide">
             <img src="resources/gallery-2.png" alt="желтое кресло" />
             <div class="gallery__slide-title">
-              <div class="container">
+              <div class="gallery__inner container">
                 <p>Проект гостиной в ЖК Маяк</p>
               </div>
             </div>
@@ -217,7 +219,7 @@
           <div class="gallery__slide">
             <img src="resources/gallery-3.png" alt="гостиная в белом стиле" />
             <div class="gallery__slide-title">
-              <div class="container">
+              <div class="gallery__inner container">
                 <p>
                   Визуализация кухни-гостиной <br />
                   в частном доме
@@ -228,7 +230,7 @@
           <div class="gallery__slide">
             <img src="resources/gallery-4.png" alt="кухня с барной стойкой" />
             <div class="gallery__slide-title">
-              <div class="container">
+              <div class="gallery__inner container">
                 <p>
                   Проект кухни в скандинавском <br />
                   стиле для ЖК Северный Ветер
@@ -238,7 +240,7 @@
           </div>
         </div>
         <div class="gallery__controls">
-          <div class="container">
+          <div class="gallery__inner container">
             <button class="gallery__btn gallery__btn-prev">
               <img src="resources/control-left.png" alt="" />
             </button>
@@ -248,6 +250,7 @@
           </div>
         </div>
       </section>
+
       <!-- КОНТАКТЫ -->
       <section class="contacts container">
         <h2>контакты</h2>
