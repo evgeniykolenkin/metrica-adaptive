@@ -190,7 +190,13 @@
         </div>
         <div class="gallery">
           <div class="gallery__slide gallery__slide-active">
-            <img src="resources/gallery-1.png" alt="кровать" />
+            <picture>
+              <source
+                media="(max-width: 400px)"
+                srcset="resources/gallery-1-phone.png"
+              />
+              <img src="resources/gallery-1.png" alt="кровать" />
+            </picture>
             <div class="gallery__slide-title">
               <div class="container">
                 <p>
