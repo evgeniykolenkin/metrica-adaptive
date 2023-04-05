@@ -1,11 +1,134 @@
+.contacts.container {
+  padding-bottom: 140px;
+}
+
+.contacts h2 {
+  margin-bottom: 74px;
+}
+
+.contacts__inner {
+  position: relative;
+  display: flex;
+  gap: 100px;
+}
+
+.contacts__inner li a {
+  display: inline-block;
+  font-size: 60px;
+  color: #121212;
+}
+
+.contacts__phone a {
+  height: 70px;
+  line-height: 60px;
+  letter-spacing: -0.01em;
+}
+
+.contacts__mail a {
+  height: 60px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  border-bottom: 2px solid #121212;
+}
+
+.contacts__link:hover {
+  opacity: 0.5;
+}
+
+.contacts__inner li::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contacts__phone::before {
+  top: -49px;
+  background-image: url(../resources/contacts-phone.png);
+}
+
+.contacts__mail::before {
+  top: -46px;
+  background-image: url(../resources/contacts-mail.png);
+}
+
 @media (max-width: 1199px) {
   .contacts.container {
     padding-top: 120px;
+    padding-bottom: 69px;
+  }
+
+  .contacts__inner {
+    gap: 114px;
+  }
+
+  .contacts__inner li a {
+    font-size: 45px;
+  }
+
+  .contacts__mail a {
+    height: 48px;
+  }
+
+  .contacts__inner li::before {
+    width: 21px;
+    height: 23px;
+  }
+}
+
+@media (max-width: 802px) {
+  .contacts__inner {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .contacts__phone a {
+    height: 56px;
+    line-height: 55px;
+    letter-spacing: -0.02em;
   }
 }
 
 @media (max-width: 767px) {
   .contacts.container {
     padding-top: 80px;
+  }
+
+  .contacts h2 {
+    margin-bottom: 57px;
+  }
+
+  .contacts__inner {
+    flex-direction: column;
+    gap: 58px;
+  }
+
+  .contacts__inner li a {
+    font-size: 35px;
+  }
+
+  .contacts__phone a {
+    height: 56px;
+    line-height: 55px;
+    letter-spacing: -0.02em;
+  }
+
+  .contacts__mail a {
+    width: 240px;
+    height: 46px;
+    line-height: 36px;
+  }
+
+  .contacts__inner li::before {
+    width: 16px;
+    height: 17px;
+  }
+  .contacts__phone::before {
+    top: -35px;
+  }
+
+  .contacts__mail::before {
+    top: 72px;
   }
 }

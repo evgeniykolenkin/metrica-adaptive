@@ -45,8 +45,8 @@
       <!-- ПРОЕКТЫ С КНОПКОЙ "ПОСМОТРЕТЬ ПРОЕКТЫ" -->
       <section class="projects container">
         <h2>проекты</h2>
-        <div class="projects__list">
-          <div class="projects__card">
+        <ul class="projects__list">
+          <li class="projects__card">
             <picture>
               <source
                 media="(max-width: 767px)"
@@ -60,8 +60,8 @@
             </picture>
             <h3>ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
             <a href="#">Подробнее →</a>
-          </div>
-          <div class="projects__card">
+          </li>
+          <li class="projects__card">
             <picture>
               <source
                 media="(max-width: 767px)"
@@ -75,8 +75,8 @@
             </picture>
             <h3>ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
             <a href="#">Подробнее →</a>
-          </div>
-          <div class="projects__card">
+          </li>
+          <li class="projects__card">
             <picture>
               <source
                 media="(max-width: 767px)"
@@ -90,8 +90,8 @@
             </picture>
             <h3>ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
             <a href="#">Подробнее →</a>
-          </div>
-        </div>
+          </li>
+        </ul>
         <a href="#" class="btn projects__btn">Смотреть все проекты</a>
       </section>
 
@@ -99,36 +99,36 @@
       <section class="services" id="services">
         <div class="container">
           <h2>услуги</h2>
-          <div class="services__inner">
-            <div class="services__card">
+          <ul class="services__inner">
+            <li class="services__card">
               <img src="resources/service-1.png" alt="чертеж с карандашом" />
               <div class="services__price">
                 <p>от 2500₽/м²</p>
               </div>
               <h3>Планировочное решение</h3>
-            </div>
-            <div class="services__card">
+            </li>
+            <li class="services__card">
               <img src="resources/service-2.png" alt="палитра цветов" />
               <div class="services__price">
                 <p>от 3000₽/м²</p>
               </div>
               <h3>Дизайн-проект</h3>
-            </div>
-            <div class="services__card">
+            </li>
+            <li class="services__card">
               <img src="resources/service-3.png" alt="линейка с чертежом" />
               <div class="services__price">
                 <p>от 30 000₽/мес</p>
               </div>
               <h3>Авторский надзор</h3>
-            </div>
-            <div class="services__card">
+            </li>
+            <li class="services__card">
               <img src="resources/service-4.png" alt="склад с паллетами" />
               <div class="services__price">
                 <p>5% от стоимости</p>
               </div>
               <h3>Комплектация</h3>
-            </div>
-          </div>
+            </li>
+          </ul>
           <button class="btn services__btn">Заказать услугу</button>
         </div>
       </section>
@@ -136,8 +136,8 @@
       <!-- ОТЗЫВЫ -->
       <section class="comments container">
         <h2>отзывы</h2>
-        <div class="comments__data">
-          <div class="comments__item">
+        <ul class="comments__data">
+          <li class="comments__item">
             <h3>Ксения, проект 65 кв.м.</h3>
             <p>
               Хочу искренне поблагодарить Вас за работу, проделанную на высоком
@@ -150,8 +150,8 @@
               красоту, которую Вы нам создали в жизнь и поделиться с Вами
               результатом!
             </p>
-          </div>
-          <div class="comments__item comments__item-small">
+          </li>
+          <li class="comments__item comments__item-small">
             <h3>Регина, проект 89 кв.м.</h3>
             <p>
               Спасибо большое за такой классный проект! Все стильно, круто,
@@ -163,8 +163,8 @@
               функциональной и красивой квартирой! Будем рекомендовать Вас всем
               друзьям и знакомым!
             </p>
-          </div>
-          <div class="comments__item">
+          </li>
+          <li class="comments__item">
             <h3>Яна, проект 120 кв.м.</h3>
             <p>
               Хотелось бы сказать большое спасибо за проделанную работу! В
@@ -179,8 +179,8 @@
               стильным и современным! Буду рекомендовать Вас тем, кому еще
               предстоит это непростое дело - ремонт!
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <!-- ГАЛЕРЕЯ -->
@@ -254,10 +254,35 @@
       <!-- КОНТАКТЫ -->
       <section class="contacts container">
         <h2>контакты</h2>
+        <ul class="contacts__inner">
+          <li class="contacts__phone">
+            <a class="contacts__link" href="tel:+79358954535"
+              >+7 935 895-45-35</a
+            >
+          </li>
+          <li class="contacts__mail">
+            <a class="contacts__link" href="mailto:hello@mail.com"
+              >hello@mail.com</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
 
-    <!-- <footer></footer> -->
+    <!-- FOOTER -->
+    <footer>
+      <section class="footer__section">
+        <nav class="footer__nav">
+          <ul>
+            <li class="footer__links"><a href="#">о нас</a></li>
+            <li class="footer__links"><a href="#">проекты</a></li>
+            <li class="footer__links"><a href="#">услуги</a></li>
+            <li class="footer__links"><a href="#">контакты</a></li>
+          </ul>
+        </nav>
+        <p>студия дизайна интерьера Метрика — 2023</p>
+      </section>
+    </footer>
     <script src="script/main.js"></script>
   </body>
 </html>
