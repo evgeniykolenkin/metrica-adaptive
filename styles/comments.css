@@ -8,10 +8,6 @@
   width: 46%;
 }
 
-.comments__item-small {
-  width: 505px;
-}
-
 .comments__item:nth-last-child(1):nth-child(odd) {
   width: 861px;
 }

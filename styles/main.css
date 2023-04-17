@@ -6,6 +6,7 @@
 @import "gallery.css";
 @import "contacts.css";
 @import "footer.css";
+@import "popup.css";
 
 html {
   scroll-behavior: smooth;
@@ -15,6 +16,10 @@ body {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
+}
+
+.body__fixed {
+  overflow: hidden;
 }
 
 .container {
@@ -95,7 +100,7 @@ h3 {
   }
 
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-size: 14px;
     line-height: 19px;
   }

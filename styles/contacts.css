@@ -24,7 +24,7 @@
   letter-spacing: -0.01em;
 }
 
-.contacts__mail a {
+.contacts__telegram a {
   height: 60px;
   line-height: 40px;
   letter-spacing: -0.04em;
@@ -48,15 +48,15 @@
   background-image: url(../resources/contacts-phone.png);
 }
 
-.contacts__mail::before {
+.contacts__telegram::before {
   top: -46px;
-  background-image: url(../resources/contacts-mail.png);
+  background-image: url(../resources/contacts-telegram.png);
 }
 
 @media (max-width: 1199px) {
   .contacts.container {
     padding-top: 120px;
-    padding-bottom: 69px;
+    padding-bottom: 112px;
   }
 
   .contacts__inner {
@@ -93,6 +93,7 @@
 @media (max-width: 767px) {
   .contacts.container {
     padding-top: 80px;
+    padding-bottom: 72px;
   }
 
   .contacts h2 {
@@ -114,7 +115,7 @@
     letter-spacing: -0.02em;
   }
 
-  .contacts__mail a {
+  .contacts__telegram a {
     width: 240px;
     height: 46px;
     line-height: 36px;
@@ -128,7 +129,7 @@
     top: -35px;
   }
 
-  .contacts__mail::before {
+  .contacts__telegram::before {
     top: 72px;
   }
 }

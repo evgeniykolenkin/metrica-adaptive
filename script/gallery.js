@@ -1,8 +1,8 @@
 const ACTIVE_SLIDE_CLASSNAME = "gallery__slide-active";
 
-const slidesNodes = Array.from(document.querySelectorAll(".gallery__slide"));
-const prevButtonNode = document.querySelector(".gallery__btn-prev");
-const nextButtonNode = document.querySelector(".gallery__btn-next");
+const slidesNodes = Array.from(document.querySelectorAll(".js-gallery__slide"));
+const prevButtonNode = document.querySelector(".js-gallery__btn-prev");
+const nextButtonNode = document.querySelector(".js-gallery__btn-next");
 
 init();
 

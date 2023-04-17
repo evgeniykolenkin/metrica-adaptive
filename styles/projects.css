@@ -46,7 +46,7 @@ picture img {
   }
 
   .projects__card:nth-last-child(1) {
-    margin-bottom: 102px;
+    margin-bottom: 97px;
   }
 
   .projects__card a {
@@ -56,7 +56,7 @@ picture img {
 
 @media (max-width: 767px) {
   .projects.container {
-    padding-bottom: 144px;
+    padding-bottom: 77px;
   }
 
   .projects__card {

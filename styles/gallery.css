@@ -1,6 +1,6 @@
 .gallery__section {
   position: relative;
-  margin-top: 157px;
+  margin-top: 151px;
 }
 
 .gallery__title .container,
@@ -11,7 +11,7 @@
 
 .gallery__title {
   position: absolute;
-  top: 60px;
+  top: 67px;
   left: 125px;
   font-size: 22px;
   line-height: 30px;
@@ -29,7 +29,7 @@
 
 .gallery__controls .container {
   display: flex;
-  gap: 23px;
+  gap: 22px;
 }
 
 .gallery__btn {
@@ -39,11 +39,11 @@
   cursor: pointer;
   width: 32px;
   height: 35px;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .gallery__btn:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .gallery__btn img {

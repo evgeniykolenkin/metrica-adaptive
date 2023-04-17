@@ -92,7 +92,7 @@
             <a href="#">Подробнее →</a>
           </li>
         </ul>
-        <a href="#" class="btn projects__btn">Смотреть все проекты</a>
+        <a href="#gallery" class="btn projects__btn">Смотреть все проекты</a>
       </section>
 
       <!-- УСЛУГИ -->
@@ -129,9 +129,42 @@
               <h3>Комплектация</h3>
             </li>
           </ul>
-          <button class="btn services__btn">Заказать услугу</button>
+          <button class="js-btn btn services__btn">Заказать услугу</button>
         </div>
       </section>
+
+      <!-- POPUP -->
+      <div class="js-popup popup">
+        <div class="js-popup__content popup__content">
+          <div class="js-popup__btn-close popup__btn-close"></div>
+          <h3>Заголовок для popup'a</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perferendis, sequi consectetur vero a, nihil dolor fugit nemo eaque,
+            pariatur soluta at amet suscipit assumenda sit illum quae adipisci
+            temporibus autem unde similique rem. Laborum provident ducimus,
+            nisi, nulla aliquam explicabo praesentium harum delectus, unde
+            incidunt optio consectetur sit consequuntur eum! Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Rerum porro assumenda nisi
+            voluptates reprehenderit eveniet quo fuga est. Similique dicsicing
+            elit. Fugiat rem, in facere impedit perferendis saepe ipsam ex
+            accusamus suscipit omnis!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perferendis, sequi consectetur vero a, nihil dolor fugit nemo eaque,
+            pariatur soluta at amet suscipit assumenda sit illum quae adipisci
+            temporibus autem unde similique rem. Laborum provident ducimus,
+            nisi, nulla aliquam explicabo praesentium harum delectus, unde
+            incidunt optio consectetur sit consequuntur eum! Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Rerum porro assumenda nisi
+            voluptates reprehenderit eveniet quo fuga est. Similique dicsicing
+            elit. Fugiat rem, in facere impedit perferendis saepe ipsam ex
+            accusamus suscipit omnis!
+          </p>
+          <button class="btn popup__btn">Отправить</button>
+        </div>
+      </div>
 
       <!-- ОТЗЫВЫ -->
       <section class="comments container">
@@ -151,7 +184,7 @@
               результатом!
             </p>
           </li>
-          <li class="comments__item comments__item-small">
+          <li class="comments__item">
             <h3>Регина, проект 89 кв.м.</h3>
             <p>
               Спасибо большое за такой классный проект! Все стильно, круто,
@@ -184,14 +217,14 @@
       </section>
 
       <!-- ГАЛЕРЕЯ -->
-      <section class="gallery__section">
+      <section class="gallery__section" id="gallery">
         <div class="gallery__title">
           <div class="gallery__inner container">
             <p>галерея проектов</p>
           </div>
         </div>
         <div class="gallery">
-          <div class="gallery__slide gallery__slide-active">
+          <div class="js-gallery__slide gallery__slide gallery__slide-active">
             <picture>
               <source
                 media="(max-width: 400px)"
@@ -208,7 +241,7 @@
               </div>
             </div>
           </div>
-          <div class="gallery__slide">
+          <div class="js-gallery__slide gallery__slide">
             <img src="resources/gallery-2.png" alt="желтое кресло" />
             <div class="gallery__slide-title">
               <div class="gallery__inner container">
@@ -216,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="gallery__slide">
+          <div class="js-gallery__slide gallery__slide">
             <img src="resources/gallery-3.png" alt="гостиная в белом стиле" />
             <div class="gallery__slide-title">
               <div class="gallery__inner container">
@@ -227,7 +260,7 @@
               </div>
             </div>
           </div>
-          <div class="gallery__slide">
+          <div class="js-gallery__slide gallery__slide">
             <img src="resources/gallery-4.png" alt="кухня с барной стойкой" />
             <div class="gallery__slide-title">
               <div class="gallery__inner container">
@@ -241,10 +274,12 @@
         </div>
         <div class="gallery__controls">
           <div class="gallery__inner container">
-            <button class="gallery__btn gallery__btn-prev">
+            <button
+              class="gallery__btn gallery__btn gallery__btn-prev js-gallery__btn-prev"
+            >
               <img src="resources/control-left.png" alt="" />
             </button>
-            <button class="gallery__btn gallery__btn-next">
+            <button class="gallery__btn gallery__btn-next js-gallery__btn-next">
               <img src="resources/control-right.png" alt="" />
             </button>
           </div>
@@ -260,9 +295,12 @@
               >+7 935 895-45-35</a
             >
           </li>
-          <li class="contacts__mail">
-            <a class="contacts__link" href="mailto:hello@mail.com"
-              >hello@mail.com</a
+          <li class="contacts__telegram">
+            <a
+              class="contacts__link"
+              target="_blank"
+              href="https://t.me/kolenochkin"
+              >@kolenochkin</a
             >
           </li>
         </ul>
@@ -283,6 +321,7 @@
         <p>студия дизайна интерьера Метрика — 2023</p>
       </section>
     </footer>
-    <script src="script/main.js"></script>
+    <script src="script/gallery.js"></script>
+    <script src="script/popup.js"></script>
   </body>
 </html>
