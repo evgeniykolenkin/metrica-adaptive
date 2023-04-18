@@ -1,4 +1,4 @@
-.footer__section {
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,7 @@
   background-color: #121212;
 }
 
-.footer__section p {
+footer p {
   width: 389px;
   font-size: 20px;
   line-height: 27px;
@@ -38,12 +38,12 @@
 }
 
 @media (max-width: 767px) {
-  .footer__section {
+  footer {
     gap: 41px;
     padding: 34px 0 26px 0;
   }
 
-  .footer__section p {
+  footer p {
     width: 253px;
     font-size: 13px;
     line-height: 18px;
