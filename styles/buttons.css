@@ -38,8 +38,7 @@
 }
 
 .btn__fullscreen-inverted:hover {
-  color: #ad1818;
-  background-color: #ffffff;
+  opacity: 0.9;
   transition: 0.3s;
 }
 
