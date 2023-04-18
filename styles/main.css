@@ -1,3 +1,4 @@
+@import "buttons.css";
 @import "description.css";
 @import "about.css";
 @import "projects.css";
@@ -7,6 +8,7 @@
 @import "contacts.css";
 @import "footer.css";
 @import "popup.css";
+@import "input.css";
 
 html {
   scroll-behavior: smooth;
@@ -36,13 +38,15 @@ a {
 h1,
 h2,
 h3,
+h4,
 p {
   letter-spacing: -0.03em;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: #121212;
 }
 
@@ -63,6 +67,12 @@ h3 {
   margin-top: 12px;
   font-size: 30px;
   line-height: 41px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 45px;
+  line-height: 61px;
 }
 
 @media (max-width: 1277px) {
@@ -109,5 +119,12 @@ h3 {
     margin-top: 17px;
     font-size: 18px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  h4 {
+    font-size: 25px;
+    line-height: 34px;
   }
 }

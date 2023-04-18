@@ -16,6 +16,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 78px;
+  margin-bottom: 102px;
 }
 
 .services__card {
@@ -51,14 +52,6 @@
   border-radius: 5px;
 }
 
-.services__btn {
-  width: 100%;
-  margin-top: 102px;
-  padding: 56px 0;
-  font-size: 31px;
-  line-height: 39px;
-}
-
 @media (max-width: 1199px) {
   .services .container {
     padding-bottom: 120px;
@@ -71,6 +64,7 @@
 
   .services__inner {
     row-gap: 77px;
+    margin-bottom: 76px;
   }
 
   .services__card {
@@ -95,10 +89,6 @@
     font-size: 20px;
     line-height: 27px;
   }
-
-  .services__btn {
-    margin-top: 76px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -113,6 +103,7 @@
   .services__inner {
     flex-direction: column;
     row-gap: 59px;
+    margin-bottom: 55px;
   }
 
   .services__card {
@@ -135,12 +126,5 @@
     padding: 5px 24px;
     font-size: 14px;
     line-height: 19px;
-  }
-
-  .services__btn {
-    margin-top: 55px;
-    padding: 34px 0;
-    font-size: 22px;
-    line-height: 30px;
   }
 }

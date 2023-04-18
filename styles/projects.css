@@ -19,23 +19,6 @@ picture img {
   color: #ad1818;
 }
 
-.projects__btn {
-  width: 100%;
-  text-align: center;
-  padding: 56px 0;
-  font-size: 30px;
-  line-height: 41px;
-  color: #ad1818;
-  background-color: transparent;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.projects__btn:hover {
-  color: #ffffff;
-  background-color: #ad1818;
-  transition: 0.3s;
-}
-
 @media (max-width: 1199px) {
   .projects.container {
     padding-bottom: 103px;
@@ -71,11 +54,5 @@ picture img {
     margin-top: 11px;
     font-size: 16px;
     line-height: 22px;
-  }
-
-  .projects__btn {
-    padding: 37px 0;
-    font-size: 22px;
-    line-height: 30px;
   }
 }

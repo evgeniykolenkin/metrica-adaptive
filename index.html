@@ -92,7 +92,7 @@
             <a href="#">Подробнее →</a>
           </li>
         </ul>
-        <a href="#gallery" class="btn projects__btn">Смотреть все проекты</a>
+        <a href="#gallery" class="btn btn__fullscreen">Смотреть все проекты</a>
       </section>
 
       <!-- УСЛУГИ -->
@@ -129,7 +129,9 @@
               <h3>Комплектация</h3>
             </li>
           </ul>
-          <button class="js-btn btn services__btn">Заказать услугу</button>
+          <button class="js-btn btn btn__fullscreen-inverted services__btn">
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -137,32 +139,18 @@
       <div class="js-popup popup">
         <div class="js-popup__content popup__content">
           <div class="js-popup__btn-close popup__btn-close"></div>
-          <h3>Заголовок для popup'a</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, sequi consectetur vero a, nihil dolor fugit nemo eaque,
-            pariatur soluta at amet suscipit assumenda sit illum quae adipisci
-            temporibus autem unde similique rem. Laborum provident ducimus,
-            nisi, nulla aliquam explicabo praesentium harum delectus, unde
-            incidunt optio consectetur sit consequuntur eum! Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Rerum porro assumenda nisi
-            voluptates reprehenderit eveniet quo fuga est. Similique dicsicing
-            elit. Fugiat rem, in facere impedit perferendis saepe ipsam ex
-            accusamus suscipit omnis!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, sequi consectetur vero a, nihil dolor fugit nemo eaque,
-            pariatur soluta at amet suscipit assumenda sit illum quae adipisci
-            temporibus autem unde similique rem. Laborum provident ducimus,
-            nisi, nulla aliquam explicabo praesentium harum delectus, unde
-            incidunt optio consectetur sit consequuntur eum! Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Rerum porro assumenda nisi
-            voluptates reprehenderit eveniet quo fuga est. Similique dicsicing
-            elit. Fugiat rem, in facere impedit perferendis saepe ipsam ex
-            accusamus suscipit omnis!
-          </p>
-          <button class="btn popup__btn">Отправить</button>
+          <div class="popup__title">
+            <h4>Заказать услугу</h4>
+            <p>Заполните форму, мы свяжемся с вами в течение суток</p>
+          </div>
+          <form class="input__popup-form">
+            <input type="text" name="name" placeholder="Имя" />
+            <input type="email" name="email" placeholder="Электронная почта" />
+            <input type="tel" name="phone" placeholder="Номер телефона" />
+          </form>
+          <button class="btn btn__fullscreen-inverted popup__btn">
+            Отправить
+          </button>
         </div>
       </div>
 
@@ -321,6 +309,8 @@
         <p>студия дизайна интерьера Метрика — 2023</p>
       </section>
     </footer>
+
+    <!-- SCRIPTS -->
     <script src="script/gallery.js"></script>
     <script src="script/popup.js"></script>
   </body>
