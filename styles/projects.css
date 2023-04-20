@@ -21,7 +21,7 @@ picture img {
 
 @media (max-width: 1199px) {
   .projects.container {
-    padding-bottom: 103px;
+    padding-bottom: 100px;
   }
 
   .projects__card {
@@ -39,7 +39,7 @@ picture img {
 
 @media (max-width: 767px) {
   .projects.container {
-    padding-bottom: 77px;
+    padding-bottom: 80px;
   }
 
   .projects__card {

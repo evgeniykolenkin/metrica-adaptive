@@ -1,5 +1,5 @@
 .description.container {
-  padding-top: 68px;
+  padding-top: 69px;
 }
 
 .description__data {
@@ -23,8 +23,8 @@
 }
 
 @media (max-width: 1199px) {
-  .description {
-    padding-top: 74px;
+  .description.container {
+    padding-top: 70px;
   }
 
   .description__data {
@@ -38,8 +38,8 @@
 }
 
 @media (max-width: 767px) {
-  .description {
-    padding-top: 61px;
+  .description.container {
+    padding-top: 58px;
   }
 
   .description__data {

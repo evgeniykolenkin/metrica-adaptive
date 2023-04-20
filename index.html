@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Metrica Adaptive</title>
+    <link
+      rel="shortcut icon"
+      href="resources/favicon.png"
+      type="image/x-icon"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -258,70 +263,68 @@
 
       <!-- ГАЛЕРЕЯ -->
       <section class="gallery__section" id="gallery">
-        <div class="gallery__title">
-          <div class="gallery__inner container">
+        <div class="gallery__data container">
+          <div class="gallery__data-title">
             <p>галерея проектов</p>
+          </div>
+          <div class="gallery__data-controls">
+            <button class="js-gallery__btn-prev gallery__btn gallery__btn-prev">
+              <img src="resources/control-left.png" alt="" />
+            </button>
+            <button class="js-gallery__btn-next gallery__btn gallery__btn-next">
+              <img src="resources/control-right.png" alt="" />
+            </button>
           </div>
         </div>
         <div class="gallery">
-          <div class="js-gallery__slide gallery__slide gallery__slide-active">
-            <picture>
-              <source
-                media="(max-width: 400px)"
-                srcset="resources/gallery-1-phone.png"
-              />
-              <img src="resources/gallery-1.png" alt="кровать" />
-            </picture>
-            <div class="gallery__slide-title">
-              <div class="gallery__inner container">
-                <p>
-                  Проект Двухкомнатной <br />
-                  квартиры в ЖК Лесной Пейзаж
-                </p>
+          <div class="gallery__inner">
+            <div class="js-gallery__slide gallery__slide gallery__slide-active">
+              <picture>
+                <source
+                  media="(max-width: 400px)"
+                  srcset="resources/gallery-1-phone.png"
+                />
+                <img src="resources/gallery-1.png" alt="кровать" />
+              </picture>
+              <div class="container">
+                <div class="gallery__slide-title">
+                  <p>
+                    Проект Двухкомнатной <br />
+                    квартиры в ЖК Лесной Пейзаж
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="js-gallery__slide gallery__slide">
-            <img src="resources/gallery-2.png" alt="желтое кресло" />
-            <div class="gallery__slide-title">
-              <div class="gallery__inner container">
-                <p>Проект гостиной в ЖК Маяк</p>
+            <div class="js-gallery__slide gallery__slide">
+              <img src="resources/gallery-2.png" alt="желтое кресло" />
+              <div class="gallery__slide-title">
+                <div class="gallery__inner container">
+                  <p>Проект гостиной в ЖК Маяк</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="js-gallery__slide gallery__slide">
-            <img src="resources/gallery-3.png" alt="гостиная в белом стиле" />
-            <div class="gallery__slide-title">
-              <div class="gallery__inner container">
-                <p>
-                  Визуализация кухни-гостиной <br />
-                  в частном доме
-                </p>
+            <div class="js-gallery__slide gallery__slide">
+              <img src="resources/gallery-3.png" alt="гостиная в белом стиле" />
+              <div class="gallery__slide-title">
+                <div class="gallery__inner container">
+                  <p>
+                    Визуализация кухни-гостиной <br />
+                    в частном доме
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="js-gallery__slide gallery__slide">
-            <img src="resources/gallery-4.png" alt="кухня с барной стойкой" />
-            <div class="gallery__slide-title">
-              <div class="gallery__inner container">
-                <p>
-                  Проект кухни в скандинавском <br />
-                  стиле для ЖК Северный Ветер
-                </p>
+            <div class="js-gallery__slide gallery__slide">
+              <img src="resources/gallery-4.png" alt="кухня с барной стойкой" />
+              <div class="gallery__slide-title">
+                <div class="gallery__inner container">
+                  <p>
+                    Проект кухни в скандинавском <br />
+                    стиле для ЖК Северный Ветер
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="gallery__controls">
-          <div class="gallery__inner container">
-            <button
-              class="gallery__btn gallery__btn gallery__btn-prev js-gallery__btn-prev"
-            >
-              <img src="resources/control-left.png" alt="" />
-            </button>
-            <button class="gallery__btn gallery__btn-next js-gallery__btn-next">
-              <img src="resources/control-right.png" alt="" />
-            </button>
           </div>
         </div>
       </section>

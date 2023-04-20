@@ -78,11 +78,6 @@
 }
 
 @media (max-width: 802px) {
-  .contacts__inner {
-    justify-content: space-between;
-    gap: 0;
-  }
-
   .contacts__phone a {
     height: 56px;
     line-height: 55px;
@@ -116,7 +111,7 @@
   }
 
   .contacts__telegram a {
-    width: 240px;
+    max-width: 240px;
     height: 46px;
     line-height: 36px;
   }
