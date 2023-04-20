@@ -20,7 +20,7 @@
 .header__nav ul {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 40px;
 }
 
 .header__link a {
