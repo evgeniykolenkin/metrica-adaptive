@@ -50,11 +50,17 @@ footer p {
   }
 
   .footer__nav ul {
-    gap: 30px;
+    gap: 21px;
   }
 
   .footer__link {
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__link {
+    font-size: 10px;
   }
 }
