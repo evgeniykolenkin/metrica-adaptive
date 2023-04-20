@@ -116,7 +116,8 @@
     height: 2px;
     width: 100%;
     background-color: #121212;
-    transition: all 0.5s ease-in-out;
+    transform: rotate(0);
+    transition: all 1s ease-in-out;
   }
 
   .burger__btn::after {
@@ -126,12 +127,12 @@
 
   .burger__btn-open::before {
     transform: rotate(45deg) translateY(11px) translateX(5px);
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .burger__btn-open::after {
     transform: rotate(-45deg) translateY(0px) translateX(-7px);
     width: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 
   .burger__btn-open {
@@ -143,5 +144,8 @@
     right: 25px;
     width: 34px;
     height: 34px;
+    /* background-image: url(../resources/btn-close.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
   }
 }
