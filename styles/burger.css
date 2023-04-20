@@ -125,15 +125,17 @@
   }
 
   .burger__btn-open::before {
-    transform: rotate(45deg) translateY(11px) translateX(5px)
+    /* transform: rotate(45deg) translateY(11px) translateX(5px)
+      translate3d(0, 0, 0); */
+    -webkit-transform: rotate(45deg) translateY(11px) translateX(5px)
       translate3d(0, 0, 0);
-    /* -webkit-transform: rotate(45deg) translateY(11px) translateX(5px) translate3d(0, 0, 0); */
     transition: all 0.5s ease-in-out;
   }
   .burger__btn-open::after {
-    transform: rotate(-45deg) translateY(0px) translateX(-7px)
+    /* transform: rotate(-45deg) translateY(0px) translateX(-7px)
+      translate3d(0, 0, 0); */
+    -webkit-transform: rotate(-45deg) translateY(0px) translateX(-7px)
       translate3d(0, 0, 0);
-    /* -webkit-transform: rotate(-45deg) translateY(0px) translateX(-7px) translate3d(0, 0, 0); */
     width: 100%;
     transition: all 0.5s ease-in-out;
   }
