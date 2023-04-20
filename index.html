@@ -15,7 +15,59 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <!-- <header></header> -->
+    <!-- HEADER -->
+    <header>
+      <section class="header container">
+        <div class="logo">
+          <a href="#">
+            <img src="resources/logo.png" alt="Метрика Логотип" />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li class="header__link"><a href="#about">о нас</a></li>
+            <li class="header__link"><a href="#projects">проекты</a></li>
+            <li class="header__link"><a href="#services">услуги</a></li>
+            <li class="header__link"><a href="#contacts">контакты</a></li>
+          </ul>
+        </nav>
+        <button class="js-burger__btn burger__btn"></button>
+      </section>
+    </header>
+
+    <!-- BURGER MENU -->
+    <div class="js-burger burger">
+      <div class="burger__content">
+        <div class="burger__logo">
+          <a href="#">
+            <img src="resources/logo.png" alt="Метрика Логотип" />
+          </a>
+        </div>
+        <nav class="burger__nav">
+          <ul>
+            <li class="burger__link"><a href="#about">о нас</a></li>
+            <li class="burger__link"><a href="#projects">проекты</a></li>
+            <li class="burger__link"><a href="#services">услуги</a></li>
+            <li class="burger__link"><a href="#contacts">контакты</a></li>
+          </ul>
+        </nav>
+        <div class="js-burger__content burger__contacts">
+          <p>для связи:</p>
+          <div class="burger__contacts-data">
+            <ul>
+              <li class="burger__link-contacts">
+                <a href="tel:+79358954535">+7 935 895-45-35</a>
+              </li>
+              <li class="burger__link-contacts">
+                <a href="https://t.me/kolenochkin" target="_blank"
+                  >@kolenochkin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ОСНОВНОЙ КОНТЕНТ -->
     <main>
@@ -31,8 +83,8 @@
       </section>
 
       <!-- О НАС С КНОПКОЙ "ПОСМОТРЕТЬ УСЛУГИ"-->
-      <section class="about container" id="about">
-        <h2>о нас</h2>
+      <section class="about container">
+        <h2 id="about">о нас</h2>
         <p>
           Студия основана в 2011 году. Полностью отдаемся проектированию и
           реализации интерьеров. К нам обращаются за уютом, индивидуальными
@@ -43,8 +95,8 @@
       </section>
 
       <!-- ПРОЕКТЫ С КНОПКОЙ "ПОСМОТРЕТЬ ПРОЕКТЫ" -->
-      <section class="projects container" id="projects">
-        <h2>проекты</h2>
+      <section class="projects container">
+        <h2 id="projects">проекты</h2>
         <ul class="projects__list">
           <li class="projects__card">
             <picture>
@@ -96,9 +148,9 @@
       </section>
 
       <!-- УСЛУГИ -->
-      <section class="services" id="services">
+      <section class="services">
         <div class="container">
-          <h2>услуги</h2>
+          <h2 id="services">услуги</h2>
           <ul class="services__inner">
             <li class="services__card">
               <img src="resources/service-1.png" alt="чертеж с карандашом" />
@@ -275,8 +327,8 @@
       </section>
 
       <!-- КОНТАКТЫ -->
-      <section class="contacts container" id="contacts">
-        <h2>контакты</h2>
+      <section class="contacts container">
+        <h2 id="contacts">контакты</h2>
         <ul class="contacts__inner">
           <li class="contacts__phone">
             <a class="contacts__link" href="tel:+79358954535"
@@ -299,17 +351,20 @@
     <footer>
       <nav class="footer__nav">
         <ul>
-          <li class="footer__links"><a href="#about">о нас</a></li>
-          <li class="footer__links"><a href="#projects">проекты</a></li>
-          <li class="footer__links"><a href="#services">услуги</a></li>
-          <li class="footer__links"><a href="#contacts">контакты</a></li>
+          <li class="footer__link"><a href="#about">о нас</a></li>
+          <li class="footer__link"><a href="#projects">проекты</a></li>
+          <li class="footer__link"><a href="#services">услуги</a></li>
+          <li class="footer__link"><a href="#contacts">контакты</a></li>
         </ul>
       </nav>
-      <p>студия дизайна интерьера Метрика — 2023</p>
+      <a href="#">
+        <p>студия дизайна интерьера Метрика — 2023</p>
+      </a>
     </footer>
 
     <!-- SCRIPTS -->
     <script src="script/gallery.js"></script>
     <script src="script/popup.js"></script>
+    <script src="script/burger.js"></script>
   </body>
 </html>

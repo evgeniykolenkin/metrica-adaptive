@@ -42,6 +42,9 @@
   transition: 0.3s;
 }
 
+@media (max-width: 1199px) {
+}
+
 @media (max-width: 767px) {
   .btn__fullscreen {
     padding: 34px 0;

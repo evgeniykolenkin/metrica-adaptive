@@ -22,18 +22,18 @@ footer p {
   gap: 55px;
 }
 
-.footer__links a {
+.footer__link a {
   color: #ffffff;
 }
 
-.footer__links {
+.footer__link {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
-.footer__links:hover {
+.footer__link:hover {
   opacity: 0.5;
 }
 
@@ -53,7 +53,7 @@ footer p {
     gap: 30px;
   }
 
-  .footer__links {
+  .footer__link {
     font-size: 12px;
     line-height: 16px;
   }

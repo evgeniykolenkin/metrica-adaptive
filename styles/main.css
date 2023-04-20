@@ -1,14 +1,16 @@
+@import "header.css";
+@import "burger.css";
 @import "buttons.css";
 @import "description.css";
 @import "about.css";
 @import "projects.css";
 @import "services.css";
+@import "popup.css";
+@import "input.css";
 @import "comments.css";
 @import "gallery.css";
 @import "contacts.css";
 @import "footer.css";
-@import "popup.css";
-@import "input.css";
 
 html {
   scroll-behavior: smooth;
