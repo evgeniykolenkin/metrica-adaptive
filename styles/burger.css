@@ -154,4 +154,8 @@
     right: 12px;
     height: 12px;
   }
+
+  .burger__btn-open {
+    right: 12px;
+  }
 }
