@@ -6,7 +6,7 @@ const burgerBodyNode = document.querySelector("body");
 const burgerNode = document.querySelector(".js-burger");
 const burgerBtnNode = document.querySelector(".js-burger__btn");
 const burgerContentNode = document.querySelector(".js-burger__content");
-const burgerMenuNode = document.querySelector(".burger__nav");
+const burgerMenuNode = document.querySelector(".js-burger__nav");
 
 burgerBtnNode.addEventListener("click", toggleBurger);
 burgerMenuNode.addEventListener("click", toggleBurger);

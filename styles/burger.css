@@ -139,7 +139,7 @@
     z-index: 200;
     right: 15px;
     width: 34px;
-    height: 34px;
+    height: 30px;
 
     /* Это простой вариант с картинкой-крестиком, если убрать все rotate анимации */
 
@@ -152,7 +152,7 @@
 @media (max-width: 767px) {
   .burger__btn {
     right: 12px;
-    height: 12px;
+    height: 30px;
   }
 
   .burger__btn-open {
