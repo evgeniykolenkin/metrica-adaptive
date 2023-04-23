@@ -55,6 +55,7 @@
 }
 
 .burger__link a {
+  display: block;
   font-size: 25px;
   line-height: 34px;
   letter-spacing: -0.03em;
@@ -136,7 +137,7 @@
   .burger__btn-open {
     position: absolute;
     z-index: 200;
-    right: 25px;
+    right: 15px;
     width: 34px;
     height: 34px;
 
