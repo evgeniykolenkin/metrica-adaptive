@@ -16,14 +16,14 @@ let SQUARE_METER_COST = 1000;
 function totalCost() {
   let cost = inputRange.value * SQUARE_METER_COST;
   inputRangeNumber.innerHTML = inputRange.value;
-  resultTotal.innerText = `${cost} ₽`;
+  resultTotal.innerText = `${cost.toLocaleString()} ₽`;
 
   let realCheckbox = document.querySelectorAll(".real__checkbox");
 
   for (input of realCheckbox) {
     if (input.checked) {
       cost += Number(input.value);
-      resultTotal.innerText = `${cost} ₽`;
+      resultTotal.innerText = `${cost.toLocaleString()} ₽`;
     }
   }
 
@@ -33,12 +33,12 @@ function totalCost() {
 function countSquareCost(e) {
   if (e.target.value === "квартира") {
     SQUARE_METER_COST = 1000;
-    resultCost.innerHTML = `${SQUARE_METER_COST} ₽/м²`;
+    resultCost.innerHTML = `${SQUARE_METER_COST.toLocaleString()} ₽/м²`;
     totalCost();
   }
   if (e.target.value === "дом") {
     SQUARE_METER_COST = 1500;
-    resultCost.innerHTML = `${SQUARE_METER_COST} ₽/м²`;
+    resultCost.innerHTML = `${SQUARE_METER_COST.toLocaleString()} ₽/м²`;
     totalCost();
   }
 }
