@@ -33,12 +33,12 @@ function totalCost() {
 function countSquareCost(e) {
   if (e.target.value === "квартира") {
     SQUARE_METER_COST = 1000;
-    resultCost.innerText = `${SQUARE_METER_COST} ₽/м²`;
+    resultCost.innerHTML = `${SQUARE_METER_COST} ₽/м²`;
     totalCost();
   }
   if (e.target.value === "дом") {
     SQUARE_METER_COST = 1500;
-    resultCost.innerText = `${SQUARE_METER_COST} ₽/м²`;
+    resultCost.innerHTML = `${SQUARE_METER_COST} ₽/м²`;
     totalCost();
   }
 }
