@@ -12,12 +12,13 @@
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .popup__open {
   opacity: 1;
   visibility: visible;
+  transition: all 0.3s ease-in-out;
 }
 
 .popup__content {

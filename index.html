@@ -213,15 +213,331 @@
             <p>Заполните форму, мы свяжемся с вами в течение суток</p>
           </div>
           <form class="input__popup-form">
-            <input type="text" name="name" placeholder="Имя" />
-            <input type="email" name="email" placeholder="Электронная почта" />
-            <input type="tel" name="phone" placeholder="Номер телефона" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя"
+              class="input__popup"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Электронная почта"
+              class="input__popup"
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Номер телефона"
+              class="input__popup"
+            />
           </form>
           <button class="btn btn__fullscreen-inverted popup__btn">
             Отправить
           </button>
         </div>
       </div>
+
+      <!-- КАЛЬКУЛЯТОР -->
+      <section class="calculator container">
+        <h4>Калькулятор стоимости ремонта</h4>
+        <div class="calculator__wrapper">
+          <div class="calculator__inner">
+            <div class="calculator__space">
+              <div class="calculator__space-text">
+                <h3>выберите тип помещения</h3>
+                <h3>укажите метраж помещения</h3>
+              </div>
+              <div class="calculator__space-data">
+                <select class="calculator__place">
+                  <option value="квартира">квартира</option>
+                  <option value="дом">дом</option>
+                </select>
+                <div class="calculator__range">
+                  <span class="calculator__range-number">44</span>
+                  <span class="calculator__range-text"> м² </span>
+                  <input
+                    type="range"
+                    min="1"
+                    max="300"
+                    value="44"
+                    class="input__range"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="calculator__compound">
+              <h3 class="calculator__compound-title">состав дизайн-проекта</h3>
+              <div class="calculator__compaund-inner">
+                <div class="calculator__compaund-text">
+                  <ul>
+                    <li>
+                      <h3>планировочные решения</h3>
+                    </li>
+                    <li>
+                      <h3>варианты чертежей</h3>
+                    </li>
+                    <li>
+                      <h3>варианты визуализаций</h3>
+                    </li>
+                  </ul>
+                </div>
+                <div class="calculator__compaund-data">
+                  <ul>
+                    <li class="calculator__compaund-item">
+                      <button
+                        data-action="minus"
+                        class="btn compaund__btn minus"
+                        id="minus"
+                      >
+                        -</button
+                      ><span id="compaund__amount" class="compaund__amount"
+                        >3</span
+                      ><button data-action="plus" class="btn compaund__btn">
+                        +
+                      </button>
+                    </li>
+                    <li class="calculator__compaund-item">
+                      <button
+                        data-action="minus"
+                        class="btn compaund__btn minus"
+                        id="minus"
+                      >
+                        -</button
+                      ><span id="compaund__amount" class="compaund__amount"
+                        >2</span
+                      ><button data-action="plus" class="btn compaund__btn">
+                        +
+                      </button>
+                    </li>
+                    <li class="calculator__compaund-item">
+                      <button
+                        data-action="minus"
+                        class="btn compaund__btn minus"
+                        id="minus"
+                      >
+                        -</button
+                      ><span id="compaund__amount" class="compaund__amount"
+                        >1</span
+                      ><button data-action="plus" class="btn compaund__btn">
+                        +
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__additions">
+              <h3 class="calculator__additions-title">
+                что понадобится в дизайн проекте
+              </h3>
+              <div class="calculator__additions-list">
+                <ul>
+                  <li data-action="check" class="calculator__additions-item">
+                    <label for="addition-1" class="calculator__additions-label">
+                      <h3>3D визуализация</h3>
+                      <input
+                        type="checkbox"
+                        id="addition-1"
+                        data-action="check"
+                        class="calculator__additions-checkbox"
+                      />
+                      <span class="hidden__checkbox"></span>
+                    </label>
+                  </li>
+                  <li data-action="check" class="calculator__additions-item">
+                    <label for="addition-2" class="calculator__additions-label">
+                      <h3>чертежи (рабочая документация)</h3>
+                      <input
+                        type="checkbox"
+                        id="addition-2"
+                        data-action="check"
+                        class="calculator__additions-checkbox"
+                      />
+                      <span class="hidden__checkbox"></span>
+                    </label>
+                  </li>
+                  <li data-action="check" class="calculator__additions-item">
+                    <label for="addition-3" class="calculator__additions-label">
+                      <h3>планировочное решение</h3>
+                      <input
+                        type="checkbox"
+                        id="addition-3"
+                        data-action="check"
+                        class="calculator__additions-checkbox"
+                      />
+                      <span class="hidden__checkbox"></span>
+                    </label>
+                  </li>
+                  <li data-action="check" class="calculator__additions-item">
+                    <label for="addition-4" class="calculator__additions-label">
+                      <h3>ведомости (шопинг-лист)</h3>
+                      <input
+                        type="checkbox"
+                        id="addition-4"
+                        data-action="check"
+                        class="calculator__additions-checkbox"
+                      />
+                      <span class="hidden__checkbox"></span>
+                    </label>
+                  </li>
+                  <li data-action="check" class="calculator__additions-item">
+                    <label for="addition-5" class="calculator__additions-label">
+                      <h3>товары со скидкой</h3>
+                      <input
+                        type="checkbox"
+                        id="addition-5"
+                        data-action="check"
+                        class="calculator__additions-checkbox"
+                      />
+                      <span class="hidden__checkbox"></span>
+                    </label>
+                  </li>
+                  <li data-action="check" class="calculator__additions-item">
+                    <label for="addition-6" class="calculator__additions-label">
+                      <h3>смета на ремонт</h3>
+                      <input
+                        type="checkbox"
+                        id="addition-6"
+                        data-action="check"
+                        class="calculator__additions-checkbox"
+                      />
+                      <span class="hidden__checkbox"></span>
+                    </label>
+                  </li>
+                  <li data-action="check" class="calculator__additions-item">
+                    <label for="addition-7" class="calculator__additions-label">
+                      <h3>мебель на заказ</h3>
+                      <input
+                        type="checkbox"
+                        id="addition-7"
+                        data-action="check"
+                        class="calculator__additions-checkbox"
+                      />
+                      <span class="hidden__checkbox"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="calculator__extras">
+              <h3>дополнительные услуги</h3>
+              <p class="calculator__extras-subtitle">
+                оплачиваются отдельно и не входят в состав проекта
+              </p>
+              <div class="calculator__extras-list">
+                <ul>
+                  <li class="extras__list-item">
+                    <label class="list__item-title">
+                      <input
+                        data-action="checked"
+                        type="checkbox"
+                        class="real__checkbox"
+                        id="real__checkbox"
+                        value="30000"
+                      />
+                      <span class="custom__checkbox"></span>
+                      умный дом
+                    </label>
+                    <span class="list__item-price">30 000 ₽</span>
+                  </li>
+                  <li class="extras__list-item">
+                    <label class="list__item-title">
+                      <input
+                        data-action="checked"
+                        type="checkbox"
+                        class="real__checkbox"
+                        id="real__checkbox"
+                        value="20000"
+                      />
+                      <span class="custom__checkbox"></span>
+                      технический надзор
+                    </label>
+                    <span class="list__item-price">20 000 ₽</span>
+                  </li>
+                  <li class="extras__list-item">
+                    <label class="list__item-title">
+                      <input
+                        data-action="checked"
+                        type="checkbox"
+                        class="real__checkbox"
+                        id="real__checkbox"
+                        value="25000"
+                      />
+                      <span class="custom__checkbox"></span>
+                      авторский надзор
+                    </label>
+                    <span class="list__item-price">25 000 ₽</span>
+                  </li>
+                  <li class="extras__list-item">
+                    <label class="list__item-title">
+                      <input
+                        data-action="checked"
+                        type="checkbox"
+                        class="real__checkbox"
+                        id="real__checkbox"
+                        value="4000"
+                      />
+                      <span class="custom__checkbox"></span>
+                      3D тур по визуализациям проекта
+                    </label>
+                    <span class="list__item-price">4 000 ₽</span>
+                  </li>
+                  <li class="extras__list-item">
+                    <label class="list__item-title">
+                      <input
+                        data-action="checked"
+                        type="checkbox"
+                        class="real__checkbox"
+                        id="real__checkbox"
+                        value="20000"
+                      />
+                      <span class="custom__checkbox"></span>
+                      дизайн-проект дополнительного помещения
+                    </label>
+                    <span class="list__item-price">20 000 ₽</span>
+                  </li>
+                  <li class="extras__list-item">
+                    <label class="list__item-title">
+                      <input
+                        data-action="checked"
+                        type="checkbox"
+                        class="real__checkbox"
+                        id="real__checkbox"
+                        value="10000"
+                      />
+                      <span class="custom__checkbox"></span>
+                      дизайн-проект лоджии
+                    </label>
+                    <span class="list__item-price">10 000 ₽</span>
+                  </li>
+                  <li class="extras__list-item">
+                    <label class="list__item-title">
+                      <input
+                        data-action="checked"
+                        type="checkbox"
+                        class="real__checkbox"
+                        id="real__checkbox"
+                        value="10000"
+                      />
+                      <span class="custom__checkbox"></span>
+                      дизайн-проект гардеробной комнаты
+                    </label>
+                    <span class="list__item-price">10 000 ₽</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="calculator__result">
+            <h2>стоимость проекта</h2>
+            <span class="calculator__result-total">44000 ₽</span>
+            <span class="calculator__result-cost">1000 ₽/м²</span>
+            <span class="calculator__result-terms">35-45 дней</span>
+            <button class="calculator__order-btn btn">Заказать проект</button>
+          </div>
+        </div>
+      </section>
 
       <!-- ОТЗЫВЫ -->
       <section class="comments container">
@@ -382,5 +698,6 @@
     <script src="script/gallery.js"></script>
     <script src="script/popup.js"></script>
     <script src="script/burger.js"></script>
+    <script src="script/calculator.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
 }
 
 .burger__open {
@@ -113,7 +113,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    height: 2px;
+    height: 3px;
     width: 100%;
     background-color: #121212;
     transition: all 0.5s ease-in-out;
