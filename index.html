@@ -249,12 +249,16 @@
                 <h3>укажите метраж помещения</h3>
               </div>
               <div class="calculator__space-data">
-                <select class="calculator__place">
+                <select class="calculator__place" id="calculator__place">
                   <option value="квартира">квартира</option>
                   <option value="дом">дом</option>
                 </select>
                 <div class="calculator__range">
-                  <span class="calculator__range-number">44</span>
+                  <span
+                    class="calculator__range-number"
+                    id="calculator__range-number"
+                    >44</span
+                  >
                   <span class="calculator__range-text"> м² </span>
                   <input
                     type="range"
@@ -262,6 +266,7 @@
                     max="300"
                     value="44"
                     class="input__range"
+                    id="input__range"
                   />
                 </div>
               </div>
@@ -282,7 +287,10 @@
                     </li>
                   </ul>
                 </div>
-                <div class="calculator__compaund-data">
+                <div
+                  class="calculator__compaund-data"
+                  id="calculator__compaund-data"
+                >
                   <ul>
                     <li class="calculator__compaund-item">
                       <button
@@ -325,80 +333,83 @@
               <h3 class="calculator__additions-title">
                 что понадобится в дизайн проекте
               </h3>
-              <div class="calculator__additions-list">
+              <div
+                class="calculator__additions-list"
+                id="calculator__additions-list"
+              >
                 <ul>
-                  <li data-action="check" class="calculator__additions-item">
+                  <li data-action="checked" class="calculator__additions-item">
                     <label class="calculator__additions-label">
                       <h3>3D визуализация</h3>
                       <input
                         type="checkbox"
-                        data-action="check"
+                        data-action="checked"
                         class="calculator__additions-checkbox"
                       />
                       <span class="hidden__checkbox"></span>
                     </label>
                   </li>
-                  <li data-action="check" class="calculator__additions-item">
+                  <li data-action="checked" class="calculator__additions-item">
                     <label class="calculator__additions-label">
                       <h3>чертежи (рабочая документация)</h3>
                       <input
                         type="checkbox"
-                        data-action="check"
+                        data-action="checked"
                         class="calculator__additions-checkbox"
                       />
                       <span class="hidden__checkbox"></span>
                     </label>
                   </li>
-                  <li data-action="check" class="calculator__additions-item">
+                  <li data-action="checked" class="calculator__additions-item">
                     <label class="calculator__additions-label">
                       <h3>планировочное решение</h3>
                       <input
                         type="checkbox"
-                        data-action="check"
+                        data-action="checked"
                         class="calculator__additions-checkbox"
                       />
                       <span class="hidden__checkbox"></span>
                     </label>
                   </li>
-                  <li data-action="check" class="calculator__additions-item">
+                  <li data-action="checked" class="calculator__additions-item">
                     <label class="calculator__additions-label">
                       <h3>ведомости (шопинг-лист)</h3>
                       <input
                         type="checkbox"
-                        data-action="check"
+                        data-action="checked"
                         class="calculator__additions-checkbox"
                       />
                       <span class="hidden__checkbox"></span>
                     </label>
                   </li>
-                  <li data-action="check" class="calculator__additions-item">
+                  <li data-action="checked" class="calculator__additions-item">
                     <label class="calculator__additions-label">
                       <h3>товары со скидкой</h3>
                       <input
                         type="checkbox"
-                        data-action="check"
+                        data-action="checked"
                         class="calculator__additions-checkbox"
                       />
                       <span class="hidden__checkbox"></span>
                     </label>
                   </li>
-                  <li data-action="check" class="calculator__additions-item">
+                  <li data-action="checked" class="calculator__additions-item">
                     <label class="calculator__additions-label">
                       <h3>смета на ремонт</h3>
                       <input
                         type="checkbox"
-                        data-action="check"
+                        data-action="checked"
                         class="calculator__additions-checkbox"
                       />
                       <span class="hidden__checkbox"></span>
                     </label>
                   </li>
-                  <li data-action="check" class="calculator__additions-item">
+                  <li data-action="checked" class="calculator__additions-item">
                     <label class="calculator__additions-label">
                       <h3>мебель на заказ</h3>
                       <input
                         type="checkbox"
-                        data-action="check"
+                        data-action="checked"
                         class="calculator__additions-checkbox"
                       />
                       <span class="hidden__checkbox"></span>
@@ -412,7 +423,7 @@
               <p class="calculator__extras-subtitle">
                 оплачиваются отдельно и не входят в состав проекта
               </p>
-              <div class="calculator__extras-list">
+              <div class="calculator__extras-list" id="calculator__extras-list">
                 <ul>
                   <li class="extras__list-item">
                     <label class="list__item-title">
@@ -511,8 +522,12 @@
           </div>
           <div class="calculator__result">
             <h2>стоимость проекта</h2>
-            <span class="calculator__result-total">44 000 ₽</span>
-            <span class="calculator__result-cost">1 000 ₽/м²</span>
+            <span class="calculator__result-total" id="calculator__result-total"
+              >44 000 ₽</span
+            >
+            <span class="calculator__result-cost" id="calculator__result-cost"
+              >1 000 ₽/м²</span
+            >
             <span class="calculator__result-terms">35-45 дней</span>
             <button class="calculator__order-btn btn">Заказать проект</button>
           </div>
